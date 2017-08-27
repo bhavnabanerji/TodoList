@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import FilterLink from '../Container/FilterLink'
+import styles from '../Styles/Footer.css'
 
 const Footer = () => (
-	<div className='footer'>
+	<div className={styles.footer}>
 		Filter:
 		<FilterLink filter="SHOW_ALL">
 			All

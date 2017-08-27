@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { connect } from 'react-redux'
+import styles from '../Styles/AddTodo.css'
 
 function AddToDo(props) { 
 
 	return (
-		<div className='add-todo-container'>
-			<input className="todo-input" onChange={(e) => props.onEdit(e.target.value)} value={props.value} />
-			<button className='add-todo' onClick= {() => props.onAddTodo(props.value)}>
+		<div className={styles.addTodoContainer}>
+			<input className={styles.todoInput} onChange={(e) => props.onEdit(e.target.value)} value={props.value} />
+			<button className={styles.addTodo} onClick= {() => props.onAddTodo(props.value)}>
 			Add todo
 			</button>
 		</div>

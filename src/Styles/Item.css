@@ -1,0 +1,20 @@
+.todoItem {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: 97px;
+  width: 210px;
+  border-radius: 5px;
+  background-color: rgb(221, 238, 255);
+  box-sizing: border-box;
+  padding: 13px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #FFDFDD;
+}

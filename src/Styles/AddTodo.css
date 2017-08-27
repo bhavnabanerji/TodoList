@@ -1,0 +1,22 @@
+.addTodoContainer {
+  padding: 20px 20px 0 20px;
+}
+
+.todoInput {
+  width: 200px;
+  line-height: 22px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.addTodo {
+    margin-left: 20px;
+    height: 37px;
+    width: 100px;
+    vertical-align: top;
+    border: 0;
+    border-radius: 5px;
+    background-color: #2874f0;
+    color: white;
+    font-size: 14px;
+}
