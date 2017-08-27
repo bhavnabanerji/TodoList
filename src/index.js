@@ -6,8 +6,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { createStore } from  'redux';
 import { combineReducers } from  'redux';
-import { Provider } from 'react-redux';
-import { connect } from 'react-redux';
+import { Provider, connect } from 'react-redux';
+import classnames from 'classnames';
 
 registerServiceWorker();
 
@@ -111,7 +111,7 @@ const TodoList = ({
 	todos,
 	onTodoClick
 }) => (
-	<ul>
+	<ul className='todo-list'>
 		{todos.map(todo => 
 			<TodoItem key={todo.id} 
 				{...todo}
@@ -170,13 +170,16 @@ const TodoItem = ({
 	text,
 	completed,
 	onClick
-}) => (
-	<li onClick={onClick} style={{
-		textDecoration: completed ? 'line-through' : 'none'
-	}}>
-		{text}
-	</li>
-);
+}) => {
+	const classNames = classnames('todo-item', {
+		completed: completed,
+	});
+	return (
+		<li className={classNames} onClick={onClick}>
+			{text}
+		</li>
+	);
+};
 
 
 
@@ -205,8 +208,8 @@ AddToDo = connect()(AddToDo);
 
 
 const Footer = () => (
-	<p>
-		Show:
+	<div className='footer'>
+		Filter:
 		<FilterLink filter="SHOW_ALL">
 			All
 		</FilterLink>
@@ -218,7 +221,7 @@ const Footer = () => (
 		<FilterLink filter="SHOW_COMPLETED">
 			Completed
 		</FilterLink>
-	</p>
+	</div>
 );
 
 const TodoApp = () => (
