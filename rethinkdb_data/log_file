@@ -1,0 +1,21 @@
+2017-08-26T14:53:53.687695000 1.568816s notice: Recursively removing directory /Users/bhavna/redux-demo/rethinkdb_data/tmp
+2017-08-26T14:53:53.689204000 1.570331s notice: Initializing directory /Users/bhavna/redux-demo/rethinkdb_data
+2017-08-26T14:53:53.689321000 1.570442s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/bhavna/redux-demo/rethinkdb_data' did not already exist or is empty.)
+2017-08-26T14:53:53.689411000 1.570532s notice: Running rethinkdb 2.3.6 (CLANG 8.0.0 (clang-800.0.42.1))...
+2017-08-26T14:53:53.693603000 1.574724s notice: Running on Darwin 15.6.0 x86_64
+2017-08-26T14:53:53.693646000 1.574767s notice: Loading data from directory /Users/bhavna/redux-demo/rethinkdb_data
+2017-08-26T14:53:53.812718000 1.693839s info: Automatically using cache size of 812 MB
+2017-08-26T14:53:53.813746000 1.694867s notice: Listening for intracluster connections on port 29015
+2017-08-26T14:53:53.815052000 1.696173s notice: Listening for client driver connections on port 28015
+2017-08-26T14:53:53.815187000 1.696308s notice: Listening for administrative HTTP connections on port 8080
+2017-08-26T14:53:53.815193000 1.696313s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-08-26T14:53:53.815201000 1.696321s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-08-26T14:53:53.815203000 1.696323s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-08-26T14:53:53.815207000 1.696327s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-26T14:53:53.815210000 1.696331s notice: Server ready, "Bhavnas_MBP_local_d48" b64be3d3-36bd-4354-8500-ca6eb1eaa2ec
+2017-08-26T14:54:22.258100000 30.138369s warn: Received invalid clustering header from [::1]:56959, closing connection -- something might be connecting to the wrong port.
+2017-08-26T14:54:22.378198000 30.258467s warn: Received invalid clustering header from [::1]:56960, closing connection -- something might be connecting to the wrong port.
+2017-08-26T14:54:27.395157000 35.275244s warn: Received invalid clustering header from [::1]:56961, closing connection -- something might be connecting to the wrong port.
+2017-08-26T15:45:46.927780000 2607.664475s info: Table 58d8685e-c9c2-4ba8-ba35-668a3b2c83b1: Starting a new Raft election for term 1.
+2017-08-26T15:45:46.928217000 2607.664912s info: Table 58d8685e-c9c2-4ba8-ba35-668a3b2c83b1: Added replica on this server.
+2017-08-26T15:45:46.949269000 2607.685964s info: Table 58d8685e-c9c2-4ba8-ba35-668a3b2c83b1: This server is Raft leader for term 1. Latest log index is 0.
