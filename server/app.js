@@ -1,6 +1,7 @@
 import express from 'express';
 import r from 'rethinkdb';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
 const app = express();
 
@@ -10,6 +11,8 @@ r.connect( {host: 'localhost', port: 28015}, function(err, conn) {
     if (err) throw err;
     connection = conn;
 });
+
+app.use(cors());
 
 app.get('/api/todos', (req, res) => {
 	r.db('todos').table('mytodos').run(connection, function(err, cursor) {
@@ -23,6 +26,7 @@ app.get('/api/todos', (req, res) => {
 
 app.use(bodyParser.json());
 app.post('/api/todo', (req, res) => {
+	console.log('Request body is: ', req.body);
 	r.db('todos').table('mytodos').insert(req.body).run(connection, function(err, result) {
 	    if (err) throw err;
 	    res.send(result);

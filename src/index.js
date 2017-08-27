@@ -6,7 +6,7 @@ import { createStore } from  'redux'
 import { Provider } from 'react-redux'
 import todoApp from './Reducer/TodoApp'
 import VisibleTodoList from './Container/VisibleTodoList'
-import AddToDo from './Container/AddToDo'
+import AddToDo from './Container/AddTodoContainer'
 import Footer from './Components/Footer'
 
 const TodoApp = () => (

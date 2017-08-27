@@ -1,5 +1,5 @@
-import { connect } from 'react-redux';
-import Link from '../Components/Link';
+import { connect } from 'react-redux'
+import Link from '../Components/Link'
 
 const mapStateToLinkProps = (state, ownProps) => {
 	return {
